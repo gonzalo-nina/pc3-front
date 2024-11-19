@@ -39,9 +39,7 @@ const EmbarcacionTable: React.FC<EmbarcacionTableProps> = ({
                                 {embarcacion.descripcion || 'Sin descripción'}
                             </td>
                             <td className="px-6 py-4 border-b">
-                                {embarcacion.fechaProgramada ? 
-                                    new Date(embarcacion.fechaProgramada).toLocaleDateString('es-ES') : 
-                                    'Fecha no programada'
+                                {embarcacion.fechaProgramada || 'Sin fecha'
                                 }
                             </td>
                             <td className="px-6 py-4 border-b">
