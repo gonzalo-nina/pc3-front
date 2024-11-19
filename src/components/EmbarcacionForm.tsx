@@ -140,17 +140,17 @@ const EmbarcacionForm: React.FC<EmbarcacionFormProps> = ({ onSubmit, initialData
                 {errors.fechaProgramada && <span className="text-red-500">{errors.fechaProgramada}</span>}
             </div>
 
-            <div className="flex gap-2">
+            <div className="button-group">
                 <button
                     type="submit"
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    className="btn btn-primary"
                 >
                     {initialData ? 'Actualizar' : 'Crear'}
                 </button>
                 <button
                     type="button"
+                    className="btn btn-cancel"
                     onClick={handleCancel}
-                    className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600"
                 >
                     Cancelar
                 </button>

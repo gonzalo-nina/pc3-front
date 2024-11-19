@@ -43,16 +43,16 @@ const EmbarcacionTable: React.FC<EmbarcacionTableProps> = ({
                                 }
                             </td>
                             <td className="px-6 py-4 border-b">
-                                <div className="flex gap-2">
+                                <div className="action-buttons">
                                     <button
                                         onClick={() => onEdit(embarcacion)}
-                                        className="px-3 py-1 text-sm bg-blue-500 text-white rounded hover:bg-blue-600"
+                                        className="btn btn-edit"
                                     >
                                         Editar
                                     </button>
                                     <button
                                         onClick={() => onDelete(embarcacion.id)}
-                                        className="px-3 py-1 text-sm bg-red-500 text-white rounded hover:bg-red-600"
+                                        className="btn btn-danger"
                                     >
                                         Eliminar
                                     </button>
